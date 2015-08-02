@@ -14,7 +14,7 @@ The virtual machine will be running the following services:
 * HDFS NameNode + NameNode
 * YARN ResourceManager + JobHistoryServer + ProxyServer
 * Hive metastore and server2
-* Spark History server
+* Spark history server
 
 # Getting Started
 
@@ -45,3 +45,6 @@ MapReduce, Hive and Spark, head on over to [VALIDATING.md](VALIDATING.md).
 If you'd like to learn more about working and optimizing Vagrant then
 take a look at [ADVANCED.md](ADVANCED.md).
 
+# Credits
+
+This project is based on the great work carried out at (https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1).
