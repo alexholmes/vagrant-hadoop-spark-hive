@@ -38,10 +38,10 @@ Here are some useful links to navigate to various UI's:
 # Validating your virtual machine setup
 
 To test out the virtual machine setup, and for examples of how to run
-MapReduce, Hive and Spark, head on over to (VALIDATING.md).
+MapReduce, Hive and Spark, head on over to [VALIDATING.md](VALIDATING.md).
 
 # More advanced setup
 
 If you'd like to learn more about working and optimizing Vagrant then
-take a look at (ADVANCED.md).
+take a look at [ADVANCED.md](ADVANCED.md).
 
