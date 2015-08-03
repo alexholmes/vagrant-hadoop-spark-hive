@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 source "/vagrant/scripts/common.sh"
 
