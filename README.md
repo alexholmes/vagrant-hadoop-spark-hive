@@ -21,7 +21,7 @@ The virtual machine will be running the following services:
 1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
 3. Run ```vagrant box add centos65 https://github.com/2creatives/vagrant-centos/releases/download/v6.5.1/centos65-x86_64-20131205.box```
-4. Git clone this project, and change directory (cd) into this project (directory).
+4. Go to [releases](https://github.com/alexholmes/vagrant-hadoop-2.7.1-spark-1.4.1-hive-1.2.1/releases) and download and extract the latest release of this project.
 5. Run ```vagrant up``` to create the VM.
 6. Execute ```vagrant ssh``` to login to the VM.
 
