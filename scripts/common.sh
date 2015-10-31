@@ -19,7 +19,7 @@ HIVE_RES_DIR=/vagrant/resources/hive
 HIVE_CONF=/usr/local/hive/conf
 
 # spark
-SPARK_VERSION=spark-1.4.1
+SPARK_VERSION=spark-1.5.1
 SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.tgz
 SPARK_MIRROR_DOWNLOAD=http://archive.apache.org/dist/spark/$SPARK_VERSION/$SPARK_VERSION-bin-hadoop2.6.tgz
 SPARK_RES_DIR=/vagrant/resources/spark
