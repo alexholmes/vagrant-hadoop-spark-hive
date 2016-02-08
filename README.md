@@ -41,11 +41,33 @@ Here are some useful links to navigate to various UI's:
 To test out the virtual machine setup, and for examples of how to run
 MapReduce, Hive and Spark, head on over to [VALIDATING.md](VALIDATING.md).
 
+# Starting services in the event of a system restart
+
+Currently if you restart your VM then the Hadoop/Spark/Hive services won't be
+up (this is something I'll address soon).  In the interim you can run the
+following commands to bring them up:
+
+```
+$ vagrant ssh
+$ sudo -s
+$ /vagrant/scripts/start-hadoop.sh
+$ nohup hive --service metastore < /dev/null > /usr/local/hive/logs/hive_metastore_`date +"%Y%m%d%H%M%S"`.log 2>&1 </dev/null &
+$ nohup hive --service hiveserver2 < /dev/null > /usr/local/hive/logs/hive_server2_`date +"%Y%m%d%H%M%S"`.log 2>&1 </dev/null &
+$ /usr/local/spark/sbin/start-history-server.sh
+
+```
+
+
 # More advanced setup
 
 If you'd like to learn more about working and optimizing Vagrant then
 take a look at [ADVANCED.md](ADVANCED.md).
 
+# For developers
+
+The file [DEVELOP.md](DEVELOP.md) contains some tips for developers.
+
 # Credits
 
-This project is based on the great work carried out at (https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1).
+This project is based on the great work carried out at
+(https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1).
